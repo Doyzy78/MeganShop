@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAEGAN-SHOP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="glow">MAEGAN
+  SHOP</h1>
+
+  <input type="text" id="telegramName" placeholder="t.me/@YourName">
+  <input type="text" id="searchInput" placeholder="Search">
+
+  <div class="music-container">
+    <label for="musicSelect" class="music-label">🎧 Choose Music: </label>
+    <select id="musicSelect" class="music-select">
+      <option value="music/Fade.mp3">Fade</option>
+      <option value="music/Hislerim.mp3">Hislerim</option>
+      <option value="music/SayGoodBye.mp3">SayGoodBye</option>
+      <option value="music/Alone.mp3">Alone - Marshmellow</option>
+      <option value="music/Kalimutan.mp3">Kalimutan Ka</option>
+      <option value="music/Aurora.mp3">RunAway</option>
+    </select>
+    <br>
+    <button id="toggleBtn">▶ Play</button>
+    <audio id="bgMusic" loop>
+      <source src="music/Fade.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="container" id="shop"></div>
+
+  <div class="cart-box">
+    <h2>🛍️ Your Cart</h2>
+    <ul id="cart"></ul>
+    <button id="checkoutBtn">Checkout</button>
+  </div>
+
+  <div id="orderSummary"></div>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="telegram.js"></script>
+  <script src="music.js"></script>
+</body>
+</html>
